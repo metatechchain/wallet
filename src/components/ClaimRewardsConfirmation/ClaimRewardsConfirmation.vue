@@ -35,7 +35,7 @@
                     <div class="col break-word">
                         <f-placeholder :content-loaded="!!dAccountInfo.stakerId" :replacement-num-chars="14">
                             <template v-if="dAccountInfo.stakerId">
-                                <t-p-c-token-value :value="dAccountInfo.delegation.pendingRewards.amount" convert />
+                                <m-t-c-token-value :value="dAccountInfo.delegation.pendingRewards.amount" convert />
                             </template>
                         </f-placeholder>
                     </div>

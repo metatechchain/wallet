@@ -282,7 +282,7 @@ export default {
 
             this.$emit('change-component', {
                 to: this.lockExist ? 'delegation-unlock-confirmation' : 'unstake-confirmation',
-                from: 'unstake-t-p-c',
+                from: 'unstake-m-t-c',
                 data: {
                     accountInfo: this.accountInfo,
                     amount,

@@ -39,22 +39,22 @@
                         <div class="wallets-info">
                             <span class="wallet-info">
                                 <span class="value">
-                                    <t-p-c-token-value :value="account.balance" convert no-currency />
+                                    <m-t-c-token-value :value="account.balance" convert no-currency />
                                     <span class="mtc"> MTC</span>
                                 </span>
                                 <span class="currency">
-                                    <t-p-c-token-value :value="WEIToMTC(account.balance) * tokenPrice" with-price-currency
+                                    <m-t-c-token-value :value="WEIToMTC(account.balance) * tokenPrice" with-price-currency
                                         no-currency />
                                 </span>
                                 <span class="label">Available</span>
                             </span>
                             <span class="wallet-info">
                                 <span class="value">
-                                    <t-p-c-token-value :value="account.totalBalance" convert no-currency />
+                                    <m-t-c-token-value :value="account.totalBalance" convert no-currency />
                                     <span class="mtc"> MTC</span>
                                 </span>
                                 <span class="currency">
-                                    <t-p-c-token-value :value="WEIToMTC(account.totalBalance) * tokenPrice"
+                                    <m-t-c-token-value :value="WEIToMTC(account.totalBalance) * tokenPrice"
                                         with-price-currency no-currency />
                                 </span>
                                 <span class="label">Total</span>

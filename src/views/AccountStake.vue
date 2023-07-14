@@ -70,7 +70,7 @@ export default {
                         previousComponent: this._data_.previousComponent,
                         stakerId: this._data_.stakerId,
                     };
-                case 'unstake-t-p-c':
+                case 'unstake-m-t-c':
                 case 'unstake-confirmation':
                 case 'delegation-unlock-confirmation':
                 case 'claim-rewards-confirmation':
@@ -92,13 +92,13 @@ export default {
                         continueToParams: this._data_.continueToParams,
                         stakerId: this._data_.stakerId,
                     };
-                case 'withdraw-t-p-c-confirmation':
+                case 'withdraw-m-t-c-confirmation':
                 case 'stake-form':
                 case 'staking-info':
                 case 'delegation-lock':
                 case 'delegation-lock-confirmation':
-                case 'defi-mint-s-t-p-c-confirmation':
-                case 'defi-repay-s-t-p-c-confirmation':
+                case 'defi-mint-s-m-t-c-confirmation':
+                case 'defi-repay-s-m-t-c-confirmation':
                     return this._data_;
                 default:
                     return null;

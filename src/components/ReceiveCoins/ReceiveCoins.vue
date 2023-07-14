@@ -32,7 +32,7 @@ import { eventBusMixin } from '../../mixins/event-bus.js';
 import { focusElem } from '@/utils/aria.js';
 import { getUniqueId } from '@/utils';
 
-const DEFAULT_COMPONENT = 'receive-t-p-c';
+const DEFAULT_COMPONENT = 'receive-m-t-c';
 
 export default {
     name: 'ReceiveCoins',
@@ -60,7 +60,7 @@ export default {
     computed: {
         currentComponentProperties() {
             switch (this.currentComponent) {
-                case 'receive-t-p-c':
+                case 'receive-m-t-c':
                     return {
                         verifyAccount: this.verifyAccount,
                     };

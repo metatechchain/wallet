@@ -14,7 +14,7 @@
                         <div class="col">
                             <f-placeholder :content-loaded="!!accountInfo" block :replacement-num-chars="10">
                                 <template v-if="accountInfo">
-                                    <t-p-c-token-value :value="accountInfo.amountDelegated" convert />
+                                    <m-t-c-token-value :value="accountInfo.amountDelegated" convert />
                                 </template>
                             </f-placeholder>
                         </div>
@@ -24,7 +24,7 @@
                         <div class="col">
                             <f-placeholder :content-loaded="!!accountInfo" block :replacement-num-chars="10">
                                 <template v-if="accountInfo">
-                                    <t-p-c-token-value :value="accountInfo.pendingRewards" convert />
+                                    <m-t-c-token-value :value="accountInfo.pendingRewards" convert />
                                 </template>
                             </f-placeholder>
                         </div>
@@ -45,7 +45,7 @@
                         <div class="col">
                             <f-placeholder :content-loaded="!!accountInfo" block :replacement-num-chars="10">
                                 <template v-if="accountInfo">
-                                    <t-p-c-token-value :value="outstandingSMTC" convert no-currency />
+                                    <m-t-c-token-value :value="outstandingSMTC" convert no-currency />
                                     sMTC
                                 </template>
                             </f-placeholder>
@@ -56,7 +56,7 @@
                         <div class="col">
                             <f-placeholder :content-loaded="!!accountInfo" block :replacement-num-chars="10">
                                 <template v-if="accountInfo">
-                                    <t-p-c-token-value :value="accountInfo.pendingWithdraw" convert />
+                                    <m-t-c-token-value :value="accountInfo.pendingWithdraw" convert />
                                 </template>
                             </f-placeholder>
                         </div>
@@ -740,7 +740,7 @@ export default {
                 (accountInfo && accountInfo.delegation && accountInfo.delegation.isDelegationLocked) || false;
 
             this.showConfirmationWindow({
-                compName: 'unstake-t-p-c',
+                compName: 'unstake-m-t-c',
                 data: {
                     accountInfo: {
                         ...accountInfo,
@@ -769,7 +769,7 @@ export default {
             });*/
 
             /*this.$emit('change-component', {
-                to: 'unstake-t-p-c',
+                to: 'unstake-m-t-c',
                 from: 'staking-info',
                 data: {
                     accountInfo: {
@@ -822,7 +822,7 @@ export default {
             // const stakerInfo = await this.stakerInfo;
 
             this.showConfirmationWindow({
-                compName: 'defi-mint-s-t-p-c-confirmation',
+                compName: 'defi-mint-s-m-t-c-confirmation',
                 data: {
                     stakerId: this.d_stakerId,
                     amountDelegated: this._delegation.amountDelegated,
@@ -838,7 +838,7 @@ export default {
             }
 
             this.showConfirmationWindow({
-                compName: 'defi-repay-s-t-p-c-confirmation',
+                compName: 'defi-repay-s-m-t-c-confirmation',
                 data: {
                     stakerId: this.d_stakerId,
                     outstandingSMTC: this._delegation.outstandingSMTC,
@@ -850,7 +850,7 @@ export default {
             });
 
             /*this.$emit('change-component', {
-                to: 'defi-repay-s-t-p-c-confirmation',
+                to: 'defi-repay-s-m-t-c-confirmation',
                 from: 'staking-info',
                 data: {
                     stakerId: this.d_stakerId,
@@ -1003,7 +1003,7 @@ export default {
             const stakerInfo = await this.stakerInfo;
 
             this.showConfirmationWindow({
-                compName: 'withdraw-t-p-c-confirmation',
+                compName: 'withdraw-m-t-c-confirmation',
                 data: {
                     accountInfo: {
                         ...accountInfo,
@@ -1018,7 +1018,7 @@ export default {
             });
 
             /*this.$emit('change-component', {
-                to: 'withdraw-t-p-c-confirmation',
+                to: 'withdraw-m-t-c-confirmation',
                 from: 'staking-info',
                 data: {
                     accountInfo: {

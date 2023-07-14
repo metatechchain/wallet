@@ -8,12 +8,12 @@
                     <h3 class="align-center-lg">
                         <span class="not-visible">Available balance (Sum)</span>
                         <span>
-                            <t-p-c-token-value :value="accountsBalance" no-currency />
+                            <m-t-c-token-value :value="accountsBalance" no-currency />
                             <span class="mtc"> MTC</span>
                         </span>
                     </h3>
                     <div class="currency">
-                        <t-p-c-token-value
+                        <m-t-c-token-value
                             :value="accountsBalance * this.$store.state.tokenPrice"
                             with-price-currency
                             no-currency
@@ -25,12 +25,12 @@
                     <h3 class="align-center-lg">
                         <span class="not-visible">Total balance (Sum)</span>
                         <span>
-                            <t-p-c-token-value :value="accountsTotalBalance" no-currency />
+                            <m-t-c-token-value :value="accountsTotalBalance" no-currency />
                             <span class="mtc"> MTC</span>
                         </span>
                     </h3>
                     <div class="currency">
-                        <t-p-c-token-value
+                        <m-t-c-token-value
                             :value="accountsTotalBalance * this.$store.state.tokenPrice"
                             with-price-currency
                             no-currency

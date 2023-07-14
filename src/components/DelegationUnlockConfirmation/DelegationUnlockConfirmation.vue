@@ -29,7 +29,7 @@
                     <div class="col break-word">
                         {{ currentAccount.address }}
                         <span class="f-row-label">
-                            ( <t-p-c-token-value :value="currentAccount.balance" convert /> )
+                            ( <m-t-c-token-value :value="currentAccount.balance" convert /> )
                         </span>
                     </div>
                 </div>

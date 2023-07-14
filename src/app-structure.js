@@ -58,7 +58,7 @@ const appStructure = [
                                 _c: [
                                     {
                                         id: 'staking-unstake-mtc',
-                                        component: 'unstake-t-p-c',
+                                        component: 'unstake-m-t-c',
                                         _c: [
                                             {
                                                 id: 'staking-delegation-unlock-confirmation',
@@ -130,7 +130,7 @@ const appStructure = [
                                     },
                                     {
                                         id: 'staking-mint-smtc-confirmation',
-                                        component: 'defi-mint-s-t-p-c-confirmation',
+                                        component: 'defi-mint-s-m-t-c-confirmation',
                                         _c: [
                                             {
                                                 id: 'staking-mint-smtc-confirmation-success-message',
@@ -144,7 +144,7 @@ const appStructure = [
                                     },
                                     {
                                         id: 'staking-repay-smtc-confirmation',
-                                        component: 'defi-repay-s-t-p-c-confirmation',
+                                        component: 'defi-repay-s-m-t-c-confirmation',
                                         _c: [
                                             {
                                                 id: 'staking-repay-smtc-confirmation-success-message',
@@ -152,7 +152,7 @@ const appStructure = [
                                                 _c: [
                                                     {
                                                         id: 'staking-repay-smtc-confirmation2',
-                                                        component: 'defi-repay-s-t-p-c-confirmation',
+                                                        component: 'defi-repay-s-m-t-c-confirmation',
                                                         _c: [
                                                             {
                                                                 id: 'staking-repay-smtc-confirmation-success-message2',
@@ -174,7 +174,7 @@ const appStructure = [
                                     },
                                     {
                                         id: 'staking-withdraw-mtc-confirmation',
-                                        component: 'withdraw-t-p-c-confirmation',
+                                        component: 'withdraw-m-t-c-confirmation',
                                         _c: [
                                             {
                                                 id: 'staking-withdraw-mtc-confirmation-success-message',

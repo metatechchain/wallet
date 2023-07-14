@@ -7,12 +7,12 @@
                     <h2 class="align-center-lg h3">
                         <span class="not-visible">Available balance</span>
                         <span>
-                            <t-p-c-token-value :value="accountBalance" convert no-currency />
+                            <m-t-c-token-value :value="accountBalance" convert no-currency />
                             <span class="mtc"> MTC</span>
                         </span>
                     </h2>
                     <div class="currency">
-                        <t-p-c-token-value
+                        <m-t-c-token-value
                             :value="WEIToMTC(accountBalance) * tokenPrice"
                             with-price-currency
                             no-currency
@@ -24,12 +24,12 @@
                     <h2 class="align-center-lg h3">
                         <span class="not-visible">Total balance</span>
                         <span>
-                            <t-p-c-token-value :value="accountTotalBalance" convert no-currency />
+                            <m-t-c-token-value :value="accountTotalBalance" convert no-currency />
                             <span class="mtc"> MTC</span>
                         </span>
                     </h2>
                     <div class="currency">
-                        <t-p-c-token-value
+                        <m-t-c-token-value
                             :value="WEIToMTC(accountTotalBalance) * tokenPrice"
                             with-price-currency
                             no-currency

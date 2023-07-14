@@ -46,7 +46,7 @@
                                 ( <f-token-value :value="maxRemainingErc20TokenBalance" :token="token" />
                             </template>
                             <template v-else>
-                                ( <t-p-c-token-value :value="currentAccount.balance" convert />
+                                ( <m-t-c-token-value :value="currentAccount.balance" convert />
                             </template>
                             <template v-if="currentAccount.name">, {{ currentAccount.name }}</template> )
                         </span>
